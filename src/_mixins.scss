@@ -5,20 +5,26 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   position: relative;
+  z-index: 1;
+  padding-bottom: 5vh;
+}
+
+@mixin head-container ($height) {
+  height: $height;
+  background:linear-gradient($backround-color 55%, rgba(47,200,163, .2));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 90px 90px;
   z-index: 1;
 }
 
 @mixin headline {
   color: $button-text-color;
-  height: 18vh;
-  background:linear-gradient($backround-color 55%, rgba(47,200,163, .2));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0px 0px 90px 90px;
-  z-index: 1;
   font: {
     size: 15vw;
     weight: 700;
@@ -26,7 +32,7 @@
 }
 
 @mixin headline3 {
-    color: button-text-color;
+    color: $button-text-color;
     z-index: 1;
     font: {
         size: 8vw;
@@ -34,10 +40,60 @@
     };
 }
 
+@mixin headline4 {
+  color: $button-text-color;
+  z-index: 1;
+  border-bottom: 2px solid $button-text-color;
+  margin-bottom: 4vh;
+  font: {
+    size: 6vw;
+    weight: 800;
+  }
+}
+
+@mixin p {
+  color: $button-text-color;
+  z-index: 1;
+  font: {
+    size: 3vw;
+  }
+}
+
+@mixin inner-container {
+  height: auto;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  margin-top: 5vh;
+}
+
+@mixin row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @mixin select {
     @extend input;
 }
 
+@mixin card {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 20vh;
+  padding: 15px;
+  margin-top: 5vh;
+  transition: all 0.3s ease;
+}
 
 //inputs
 @mixin input {

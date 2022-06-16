@@ -20,9 +20,11 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   position: relative;
   z-index: 1;
+  padding-bottom: 5vh;
 }
 
 #pilot-image {
@@ -34,12 +36,43 @@
 
 h1 {
   color: #02292C;
+  font-size: 15vw;
+  font-weight: 700;
+}
+
+h3 {
+  color: #02292C;
+  z-index: 1;
+  font-size: 8vw;
+  font-weight: 400;
+}
+
+h4 {
+  color: #02292C;
+  z-index: 1;
+  border-bottom: 2px solid #02292C;
+  margin-bottom: 4vh;
+  font-size: 6vw;
+  font-weight: 800;
+}
+
+p {
+  color: #02292C;
+  z-index: 1;
+  font-size: 3vw;
+}
+
+header {
   height: 18vh;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, #F3F5F5), to(rgba(47, 200, 163, 0.2)));
   background: linear-gradient(#F3F5F5 55%, rgba(47, 200, 163, 0.2));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -48,15 +81,6 @@ h1 {
           align-items: center;
   border-radius: 0px 0px 90px 90px;
   z-index: 1;
-  font-size: 15vw;
-  font-weight: 700;
-}
-
-h3 {
-  color: button-text-color;
-  z-index: 1;
-  font-size: 8vw;
-  font-weight: 400;
 }
 
 .register-form {
@@ -105,5 +129,91 @@ input:focus, select:focus {
   border-radius: 10px;
   padding: 15px;
   font-weight: 600;
+}
+
+.info-panel {
+  height: 30vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, #F3F5F5), to(rgba(47, 200, 163, 0.2)));
+  background: linear-gradient(#F3F5F5 55%, rgba(47, 200, 163, 0.2));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0px 0px 90px 90px;
+  z-index: 1;
+}
+
+.inner-container {
+  height: auto;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  margin-top: 5vh;
+}
+
+.row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  height: 20vh;
+  padding: 15px;
+  margin-top: 5vh;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card:focus {
+  outline: none;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+.card img {
+  width: 60%;
+}
+
+#background-main {
+  position: fixed;
+  bottom: 0%;
+  width: 130%;
+  opacity: 0.4;
 }
 /*# sourceMappingURL=App.css.map */

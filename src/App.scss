@@ -29,6 +29,18 @@ h3 {
   @include headline3;
 }
 
+h4 {
+  @include headline4;
+}
+
+p {
+  @include p;
+}
+
+header {
+  @include head-container(18vh);
+}
+
 .register-form {
   display: flex;
   flex-direction: column;
@@ -54,4 +66,38 @@ input:focus {
 
 #submit-button {
   @include button;
+}
+
+// Main Page
+
+.info-panel {
+  @include head-container(30vh);
+}
+
+.inner-container {
+  @include inner-container;
+}
+
+.row {
+  @include row;
+}
+
+.card {
+  @include card;
+}
+
+.card:focus {
+  outline: none;
+  transform: scale(1.04);
+}
+
+.card img {
+  width: 60%;
+}
+
+#background-main {
+  position: fixed;
+  bottom: 0%;
+  width: 130%;
+  opacity: 0.4;
 }

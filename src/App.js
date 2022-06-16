@@ -1,15 +1,28 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { LoginContext } from "./Helpers/UserContext";
+import { useState } from "react";
+
 import RegistrationPage from "./Pages/RegistrationPage";
+import MainPage from "./Pages/MainPage";
+import MyPilots from "./Pages/MyPilots";
 
 function App() {
+  const [user, setUser] = useState({});
+
   return (
     <Router>
       <div>
-        <Routes>
-          <Route path="/" element={<RegistrationPage />} />
-          
-        </Routes>
+        <LoginContext.Provider value={{ user, setUser }}>
+          <Routes>
+            <Route
+              path="/"
+              element={<RegistrationPage user={user} setUser={setUser} />}
+            />
+            <Route path="/main" element={<MainPage />} />
+            <Route path="/mypilots" element={<MyPilots /> } />
+          </Routes>
+        </LoginContext.Provider>
       </div>
     </Router>
   );

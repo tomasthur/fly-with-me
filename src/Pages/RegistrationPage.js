@@ -1,13 +1,14 @@
 import React from 'react'
 import RegisterForm from '../Layouts/RegisterForm'
 
-const RegistrationPage = () => {
+const RegistrationPage = ({user, setUser}) => {
+
   return (
     <div className='container'>
       <header>
         <h1>Fly with me</h1>
       </header>
-      <RegisterForm />
+      <RegisterForm user={user} setUser={setUser}/>
     </div>
   )
 }

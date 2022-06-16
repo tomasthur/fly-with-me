@@ -1,10 +1,15 @@
-import React from "react";
+import React, { createContext } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import {useNavigate} from 'react-router-dom';
+
 import RegisterFormHeadline from "../Components/RegisterFormHeadline";
 import PilotImage from "../assets/3.png";
 
-const RegisterForm = () => {
+const RegisterForm = ({user, setUser}) => {
+
+  const navigate = useNavigate();
+
   const formik = useFormik({
     initialValues: {
       firstname: "",
@@ -18,7 +23,14 @@ const RegisterForm = () => {
       companyname: Yup.string().required("required"),
     }),
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      // alert(JSON.stringify(values, null, 2));
+      setUser({
+        firstname: values.firstname,
+        lastname: values.lastname,
+        companyname: values.companyname,
+        nationality: values.nationality
+      })
+      navigate('/main');
     },
   });
 
