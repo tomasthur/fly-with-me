@@ -2,43 +2,56 @@
 @import "variables";
 
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 // Registration Page
 
 .container {
-    @include container;
+  @include container;
+}
+
+#pilot-image {
+  position: absolute;
+  height: 90%;
+  left: 10%;
+  opacity: 0.3;
 }
 
 h1 {
-    @include headline;
+  @include headline;
 }
 
 h3 {
-    @include headline3;
+  @include headline3;
 }
 
 .register-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-    margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin-top: 5vh;
+  z-index: 1;
 }
 
 select {
-    @include select;
+  @include select;
 }
 
 input {
-    @include input;
+  @include input;
+}
+
+input:focus {
+  outline: none;
+  transform: scale(1.04);
 }
 
 #submit-button {
-    @include button;
+  @include button;
 }

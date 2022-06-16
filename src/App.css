@@ -3,7 +3,7 @@
   padding: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -22,6 +22,14 @@
           justify-content: flex-start;
   height: 100vh;
   position: relative;
+  z-index: 1;
+}
+
+#pilot-image {
+  position: absolute;
+  height: 90%;
+  left: 10%;
+  opacity: 0.3;
 }
 
 h1 {
@@ -39,12 +47,14 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 0px 0px 90px 90px;
+  z-index: 1;
   font-size: 15vw;
   font-weight: 700;
 }
 
 h3 {
   color: button-text-color;
+  z-index: 1;
   font-size: 8vw;
   font-weight: 400;
 }
@@ -65,6 +75,7 @@ h3 {
           align-items: center;
   height: 70vh;
   margin-top: 5vh;
+  z-index: 1;
 }
 
 input, select {
@@ -73,9 +84,18 @@ input, select {
   padding: 5px;
   width: 90%;
   margin: auto;
-  background-color: #F3F5F5;
+  background-color: transparent;
   color: #02292C;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   font-size: 3vh;
+}
+
+input:focus, select:focus {
+  outline: none;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 #submit-button {
