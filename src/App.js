@@ -1,11 +1,17 @@
-import './App.css';
-import RegistrationPage from './Pages/RegistrationPage';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RegistrationPage from "./Pages/RegistrationPage";
 
 function App() {
   return (
-    <div>
-      <RegistrationPage />
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<RegistrationPage />} />
+          
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
