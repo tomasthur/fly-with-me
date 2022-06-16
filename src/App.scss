@@ -5,5 +5,40 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+// Registration Page
+
+.container {
+    @include container;
+}
+
+h1 {
+    @include headline;
+}
+
+h3 {
+    @include headline3;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-top: 5vh;
+}
+
+select {
+    @include select;
+}
+
+input {
+    @include input;
+}
+
+#submit-button {
+    @include button;
 }

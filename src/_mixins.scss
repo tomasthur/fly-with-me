@@ -1,0 +1,62 @@
+@mixin container {
+  background-color: $backround-color;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  position: relative;
+}
+
+@mixin headline {
+  color: $button-text-color;
+  height: 18vh;
+  background:linear-gradient($backround-color 55%, rgba(47,200,163, .2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 90px 90px;
+  font: {
+    size: 15vw;
+    weight: 700;
+  }
+}
+
+@mixin headline3 {
+    color: button-text-color;
+    font: {
+        size: 8vw;
+        weight: 400;
+    };
+}
+
+@mixin select {
+    @extend input;
+}
+
+
+//inputs
+@mixin input {
+    border: none;
+    border-bottom: 2px solid $font-color;
+    padding: 5px;
+    width: 90%;
+    margin: auto;
+    background-color: $backround-color;
+    color: $button-text-color;
+    font: {
+      size: 3vh;
+    }
+}
+
+@mixin button {
+  background-color: $button-backround-color;
+  color: #fff;
+  border:none;
+  border-radius: 10px;
+  padding: 15px;
+  font: {
+    weight: 600;
+  }
+}

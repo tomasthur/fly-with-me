@@ -1,9 +1,10 @@
 import './App.css';
+import RegistrationPage from './Pages/RegistrationPage';
 
 function App() {
   return (
     <div>
-      <h1>Skuska</h1>
+      <RegistrationPage />
     </div>
   );
 }
