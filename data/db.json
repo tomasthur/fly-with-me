@@ -1,10 +1,12 @@
 {
     "my_pilots": [
         {
+            "id": 0,
             "firstname": "Tomas",
             "lastname": "Thur",
             "nationality": "Slovakia",
             "age": 31,
+            "position": "Co-Pilot",
             "isActive": false,
             "price": 35000,
             "salary": 350,
@@ -13,16 +15,31 @@
             "owner": true
         },
         {
+            "id": 1,
             "firstname": "Ivan",
             "lastname": "Dzubansky",
             "nationality": "Slovakia",
             "age": 29,
+            "position": "Captain",
             "isActive": false,
             "price": 70000,
             "salary": 700,
             "practice": 6,
             "airplane": "Boeing 737-800",
             "owner": true 
+        },
+        {
+            "id": 2,
+            "firstname": "Michal",
+            "lastname": "Hulic",
+            "nationality": "Slovakia",
+            "age": 29,
+            "isActive": false,
+            "price": 80000,
+            "salary": 800,
+            "practice": 7,
+            "airplane": "Boeing 737-800",
+            "owner": false 
         }
     ]
 }

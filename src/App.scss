@@ -25,12 +25,20 @@ h1 {
   @include headline;
 }
 
+h2 {
+  @include headline2;
+}
+
 h3 {
   @include headline3;
 }
 
 h4 {
   @include headline4;
+}
+
+h5 {
+  @include headline5;
 }
 
 p {
@@ -65,7 +73,11 @@ input:focus {
 }
 
 #submit-button {
-  @include button;
+  @include button(15px);
+}
+
+button {
+  @include button(5px);
 }
 
 // Main Page
@@ -83,7 +95,7 @@ input:focus {
 }
 
 .card {
-  @include card;
+  @include card(30%, 20vh);
 }
 
 .card:focus {
@@ -100,4 +112,25 @@ input:focus {
   bottom: 0%;
   width: 130%;
   opacity: 0.4;
+}
+
+// Pilot Page
+
+.card-pilot {
+  @include card(100%, auto);
+}
+
+#bckgrnd-pilot {
+  position: fixed;
+  right: -5%;
+  top: 10%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+//Pilot detail
+
+.pilot-detail-container {
+  @include pilot-detail(90%, auto);
+  margin: auto;
 }

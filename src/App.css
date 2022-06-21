@@ -40,10 +40,16 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  color: #02292C;
+  font-size: 12vw;
+  font-weight: 600;
+}
+
 h3 {
   color: #02292C;
   z-index: 1;
-  font-size: 8vw;
+  font-size: 7vw;
   font-weight: 400;
 }
 
@@ -54,6 +60,14 @@ h4 {
   margin-bottom: 4vh;
   font-size: 6vw;
   font-weight: 800;
+}
+
+h5 {
+  color: #02292C;
+  z-index: 1;
+  margin-bottom: 3%;
+  font-size: 5vw;
+  font-weight: 400;
 }
 
 p {
@@ -128,6 +142,17 @@ input:focus, select:focus {
   border: none;
   border-radius: 10px;
   padding: 15px;
+  z-index: 1;
+  font-weight: 600;
+}
+
+button {
+  background-color: #2FC8A3;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  z-index: 1;
   font-weight: 600;
 }
 
@@ -159,6 +184,7 @@ input:focus, select:focus {
   text-align: center;
   position: relative;
   margin-top: 5vh;
+  z-index: 1;
 }
 
 .row {
@@ -198,6 +224,7 @@ input:focus, select:focus {
   margin-top: 5vh;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  z-index: 2;
 }
 
 .card:focus {
@@ -215,5 +242,67 @@ input:focus, select:focus {
   bottom: 0%;
   width: 130%;
   opacity: 0.4;
+}
+
+.card-pilot {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  margin-top: 5vh;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+#bckgrnd-pilot {
+  position: fixed;
+  right: -5%;
+  top: 10%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.pilot-detail-container {
+  border: 1px solid #000;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: auto;
+  padding: 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 2;
+  margin: auto;
 }
 /*# sourceMappingURL=App.css.map */
