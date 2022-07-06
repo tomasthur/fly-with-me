@@ -9,6 +9,11 @@ const PilotDetail = () => {
   const { data } = useFetch(`http://localhost:8000/my_pilots/${id}`);
   const navigate = useNavigate();
 
+  const releasePilot = () => {
+    const pilot = data;
+    console.log(pilot);
+  }
+
   return (
     <div className="container">
       <PilotDetailHeader />
@@ -38,8 +43,9 @@ const PilotDetail = () => {
               <h3>Type: {data.airplane}</h3>
             </div>
             <div className="row">
-              <button>Release Pilot</button>
+              <button onClick={() => releasePilot()}>Release Pilot</button>
               <button onClick={() => navigate('/main')}>Main Page</button>
+              <button onClick={() => navigate('/mypilots')}>My Pilots</button>
             </div>
           </div>
       )}
