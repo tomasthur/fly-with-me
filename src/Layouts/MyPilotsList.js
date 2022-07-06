@@ -11,7 +11,7 @@ const MyPilotsList = () => {
   return (
     <div className='inner-container'>
         {data.filter(data => data.owner === true).map(filter => (
-            <div className="card-pilot">
+            <div className="card-pilot" key={filter.id}>
                 <div className="row">
                 <h3>{filter.firstname}  {filter.lastname}</h3>
                 </div>

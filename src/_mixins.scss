@@ -83,7 +83,7 @@
   margin: auto;
   text-align: center;
   position: relative;
-  margin-top: 5vh;
+  margin-top: 2vh;
   z-index: 1;
 }
 
@@ -105,12 +105,12 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: $width;
   height: $height;
   padding: 15px;
-  margin-top: 5vh;
+  margin-top: 3vh;
   transition: all 0.3s ease;
   z-index: 2;
 }
@@ -155,5 +155,14 @@
   height: $height;
   padding: 15px;
   transition: all 0.3s ease;
+  z-index: 2;
+}
+
+@mixin down-menu {
+  background-color: $font-color;
+  height: 8%;
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
   z-index: 2;
 }

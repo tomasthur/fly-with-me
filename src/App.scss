@@ -134,3 +134,7 @@ button {
   @include pilot-detail(90%, auto);
   margin: auto;
 }
+
+.down-menu {
+  @include down-menu;
+}

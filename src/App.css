@@ -183,7 +183,7 @@ button {
   margin: auto;
   text-align: center;
   position: relative;
-  margin-top: 5vh;
+  margin-top: 2vh;
   z-index: 1;
 }
 
@@ -212,16 +212,16 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 30%;
   height: 20vh;
   padding: 15px;
-  margin-top: 5vh;
+  margin-top: 3vh;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   z-index: 2;
@@ -257,16 +257,16 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
   height: auto;
   padding: 15px;
-  margin-top: 5vh;
+  margin-top: 3vh;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   z-index: 2;
@@ -304,5 +304,14 @@ button {
   transition: all 0.3s ease;
   z-index: 2;
   margin: auto;
+}
+
+.down-menu {
+  background-color: #205246;
+  height: 8%;
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+  z-index: 2;
 }
 /*# sourceMappingURL=App.css.map */
