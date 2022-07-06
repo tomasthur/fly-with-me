@@ -1,6 +1,6 @@
 import React from "react";
 
-const DownMenu = () => {
+const BottomMenu = () => {
   return (
     <div className="down-menu">
       <div className="row">
@@ -12,4 +12,4 @@ const DownMenu = () => {
   );
 };
 
-export default DownMenu;
+export default BottomMenu;

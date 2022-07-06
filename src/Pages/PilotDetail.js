@@ -8,13 +8,13 @@ import PilotDetailHeader from "../Layouts/PilotDetailHeader";
 
 const PilotDetail = () => {
   const { id } = useParams();
-  const { data, setData } = useFetch(`http://localhost:8000/my_pilots/${id}`);
+  const { data, setData } = useFetch(`http://localhost:8000/pilots/${id}`);
   const navigate = useNavigate();
 
   const releasePilot = () => {
     setData({...data, owner: data.owner = false});
     console.log(data);
-    fetch(`http://localhost:8000/my_pilots/${id}`, {
+    fetch(`http://localhost:8000/pilots/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type' : 'application/json'

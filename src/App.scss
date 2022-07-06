@@ -83,7 +83,7 @@ button {
 // Main Page
 
 .info-panel {
-  @include head-container(30vh);
+  @include head-container(25vh);
 }
 
 .inner-container {
@@ -137,4 +137,13 @@ button {
 
 .down-menu {
   @include down-menu;
+}
+
+//My Airplanes
+
+#bckgrnd-airplane {
+  position: fixed;
+  top: 15%;
+  height: 90%;
+  opacity: 0.4;
 }

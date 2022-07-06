@@ -157,7 +157,7 @@ button {
 }
 
 .info-panel {
-  height: 30vh;
+  height: 25vh;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, #F3F5F5), to(rgba(47, 200, 163, 0.2)));
   background: linear-gradient(#F3F5F5 55%, rgba(47, 200, 163, 0.2));
   display: -webkit-box;
@@ -308,7 +308,7 @@ button {
 
 .down-menu {
   background-color: #205246;
-  height: 8%;
+  height: 12%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -322,5 +322,13 @@ button {
   position: fixed;
   bottom: 0%;
   z-index: 2;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#bckgrnd-airplane {
+  position: fixed;
+  top: 15%;
+  height: 90%;
+  opacity: 0.4;
 }
 /*# sourceMappingURL=App.css.map */

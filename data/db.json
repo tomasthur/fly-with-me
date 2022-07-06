@@ -1,5 +1,5 @@
 {
-  "my_pilots": [
+  "pilots": [
     {
       "id": 0,
       "firstname": "Tomas",
@@ -40,6 +40,34 @@
       "practice": 7,
       "airplane": "Boeing 737-800",
       "owner": false
+    }
+  ],
+  "airplanes": [
+    {
+      "id": 0,
+      "name": "Boeing 737-800",
+      "capacity": 150,
+      "price": 250000
+    },
+    {
+      "id": 1,
+      "name": "Boeing 777",
+      "capacity": 230,
+      "price": 310000
+    },
+    {
+      "id": 2,
+      "name": "Airbus A-380",
+      "capacity": 290,
+      "price": 390000
+    }
+  ],
+  "my_airplanes": [
+    {
+      "id": 0,
+      "name": "Boeing 737-800",
+      "capacity": 150,
+      "price": 250000
     }
   ]
 }

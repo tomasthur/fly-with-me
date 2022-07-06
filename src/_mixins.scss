@@ -160,7 +160,7 @@
 
 @mixin down-menu {
   background-color: $font-color;
-  height: 8%;
+  height: 12%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -168,4 +168,5 @@
   position: fixed;
   bottom: 0%;
   z-index: 2;
+  border-radius: 10px 10px 0px 0px;
 }

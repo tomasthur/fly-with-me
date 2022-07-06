@@ -19,7 +19,7 @@ const MainPageCompany = () => {
                 <img src={Pilots} alt="" />
                 <h6>My Pilots</h6>
             </div>
-            <div className="card">
+            <div className="card" onClick={() => navigate('/myairplanes')} >
                 <img src={Airplanes} alt="" />
                 <h6>My Airplanes</h6>
             </div>

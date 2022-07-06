@@ -2,9 +2,8 @@ import React from 'react'
 import MyPilotsHeader from '../Layouts/MyPilotsHeader';
 import MyPilotsList from '../Layouts/MyPilotsList';
 import BackgroundImagePilot from '../assets/4.png';
-import useFetch from '../Helpers/useFetch';
 
-import DownMenu from "../Layouts/DownMenu";
+import BottomMenu from "../Layouts/BottomMenu";
 
 const MyPilots = () => {
 
@@ -12,7 +11,7 @@ const MyPilots = () => {
     <div className='container'>
         <MyPilotsHeader />
         <MyPilotsList />
-        <DownMenu />
+        <BottomMenu />
         <img id="bckgrnd-pilot" src={BackgroundImagePilot} alt="" />
     </div>
   )

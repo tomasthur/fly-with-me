@@ -4,7 +4,7 @@ import useFetch from '../Helpers/useFetch';
 
 const MyPilotsList = () => {
 
-    const {data} = useFetch('http://localhost:8000/my_pilots');
+    const {data} = useFetch('http://localhost:8000/pilots');
 
     const navigate = useNavigate();
 

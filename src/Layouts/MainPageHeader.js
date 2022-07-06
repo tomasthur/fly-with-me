@@ -4,7 +4,7 @@ import { useContext } from "react";
 
 const MainPageHeader = () => {
 
-    const { user, setUser } = useContext(LoginContext);
+    const { user } = useContext(LoginContext);
 
   return (
     <header className="info-panel">
