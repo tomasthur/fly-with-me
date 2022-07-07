@@ -30,7 +30,7 @@ const MainPageCompany = () => {
         </div>
 
         <div className="row">
-            <div className="card">
+            <div className="card" onClick={() => navigate('/myairports')}>
                 <img src={Airports} alt="" />
                 <h6>My Airports</h6>
             </div>

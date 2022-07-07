@@ -145,7 +145,7 @@
     {
       "id": 0,
       "name": "Kosice",
-      "capacity": 150,
+      "capacity": "150",
       "rent": 3000,
       "owner": true,
       "price": 30000

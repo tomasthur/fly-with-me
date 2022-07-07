@@ -23,7 +23,6 @@ const RegisterForm = ({user, setUser}) => {
       companyname: Yup.string().required("required"),
     }),
     onSubmit: (values) => {
-      // alert(JSON.stringify(values, null, 2));
       setUser({
         firstname: values.firstname,
         lastname: values.lastname,
