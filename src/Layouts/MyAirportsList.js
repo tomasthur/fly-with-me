@@ -32,7 +32,7 @@ const MyAirportsList = () => {
             <h5>price for rent: {filter.rent} euro</h5>
             <div className="row">
               <button onClick={() => cancelContract(filter.id)}>
-                Cancel the contract
+                Cancel contract
               </button>
               <button onClick={() => navigate("/main")}>Main Page</button>
             </div>

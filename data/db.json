@@ -183,7 +183,7 @@
       "name": "Bratislava",
       "capacity": 300,
       "rent": 6000,
-      "owner": true,
+      "owner": false,
       "price": 50000
     },
     {
