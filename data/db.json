@@ -161,7 +161,14 @@
       "price": 390000
     }
   ],
-  "my_airplanes": [],
+  "my_airplanes": [
+    {
+      "id": 0,
+      "name": "Boeing 737-800",
+      "capacity": 150,
+      "price": 250000
+    }
+  ],
   "airports": [
     {
       "id": 0,
