@@ -23,7 +23,7 @@ const MainPageCompany = () => {
                 <img src={Airplanes} alt="" />
                 <h6>My Airplanes</h6>
             </div>
-            <div className='card'>
+            <div className='card' onClick={() => navigate('/accountbalance')} >
                 <img src={Bill} alt="" />
                 <h6>Account Balance</h6>
             </div>
@@ -32,7 +32,7 @@ const MainPageCompany = () => {
         <div className="row">
             <div className="card">
                 <img src={Airports} alt="" />
-                <h6>Airports Offer</h6>
+                <h6>My Airports</h6>
             </div>
             <div className="card">
                 <img src={Schedule} alt="" />

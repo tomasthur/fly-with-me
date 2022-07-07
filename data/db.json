@@ -34,11 +34,82 @@
       "lastname": "Hulic",
       "nationality": "Slovakia",
       "age": 29,
+      "position": "Captain",
       "isActive": false,
       "price": 80000,
       "salary": 800,
       "practice": 7,
       "airplane": "Boeing 737-800",
+      "owner": false
+    },
+    {
+      "id": 3,
+      "firstname": "Ladislav",
+      "lastname": "Gartner",
+      "nationality": "Slovakia",
+      "age": 27,
+      "position": "Captain",
+      "isActive": false,
+      "price": 60000,
+      "salary": 600,
+      "practice": 5,
+      "airplane": "Boeing 777",
+      "owner": false
+    },
+    {
+      "id": 4,
+      "firstname": "Jan",
+      "lastname": "Grega",
+      "nationality": "Slovakia",
+      "age": 30,
+      "position": "Captain",
+      "isActive": false,
+      "price": 70000,
+      "salary": 700,
+      "practice": 7,
+      "airplane": "Boeing 777",
+      "owner": false
+    },
+    {
+      "id": 5,
+      "firstname": "Tomas",
+      "lastname": "Grega",
+      "nationality": "Slovakia",
+      "age": 24,
+      "position": "Co-Pilot",
+      "isActive": false,
+      "price": 30000,
+      "salary": 300,
+      "practice": 2,
+      "airplane": "Boeing 737-800",
+      "owner": false
+    },
+    {
+      "id": 6,
+      "firstname": "Peter",
+      "lastname": "Vojtila",
+      "nationality": "Slovakia",
+      "age": 28,
+      "position": "Co-Pilot",
+      "isActive": false,
+      "price": 40000,
+      "salary": 400,
+      "practice": 4,
+      "airplane": "Airbus A-380",
+      "owner": false
+    },
+    {
+      "id": 7,
+      "firstname": "Milan",
+      "lastname": "Hruby",
+      "nationality": "Slovakia",
+      "age": 77,
+      "position": "Captain",
+      "isActive": false,
+      "price": 100000,
+      "salary": 1000,
+      "practice": 50,
+      "airplane": "Airbus A-380",
       "owner": false
     }
   ],
@@ -68,6 +139,56 @@
       "name": "Boeing 737-800",
       "capacity": 150,
       "price": 250000
+    }
+  ],
+  "airports": [
+    {
+      "id": 0,
+      "name": "Kosice",
+      "capacity": 150,
+      "rent": 3000,
+      "owner": true,
+      "price": 30000
+    },
+    {
+      "id": 1,
+      "name": "Bratislava",
+      "capacity": 300,
+      "rent": 6000,
+      "owner": true,
+      "price": 50000
+    },
+    {
+      "id": 2,
+      "name": "Burgas",
+      "capacity": 300,
+      "rent": 4000,
+      "owner": false,
+      "price": 50000
+    },
+    {
+      "id": 3,
+      "name": "London",
+      "capacity": 300,
+      "rent": 5000,
+      "owner": false,
+      "price": 50000
+    },
+    {
+      "id": 4,
+      "name": "Dublin",
+      "capacity": 300,
+      "rent": 4000,
+      "owner": false,
+      "price": 40000
+    },
+    {
+      "id": 5,
+      "name": "Budapest",
+      "capacity": 300,
+      "rent": 4000,
+      "owner": false,
+      "price": 50000
     }
   ]
 }
