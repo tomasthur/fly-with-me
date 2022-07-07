@@ -111,6 +111,34 @@
       "practice": 50,
       "airplane": "Airbus A-380",
       "owner": false
+    },
+    {
+      "id": 8,
+      "firstname": "Vlastimil",
+      "lastname": "Simko",
+      "nationality": "Slovakia",
+      "age": 50,
+      "position": "Captain",
+      "isActive": false,
+      "price": 85000,
+      "salary": 850,
+      "practice": 30,
+      "airplane": "Airbus A-380",
+      "owner": false
+    },
+    {
+      "id": 9,
+      "firstname": "Tomas",
+      "lastname": "Simko",
+      "nationality": "Slovakia",
+      "age": 24,
+      "position": "Co-Pilot",
+      "isActive": false,
+      "price": 3000,
+      "salary": 300,
+      "practice": 3,
+      "airplane": "Airbus A-380",
+      "owner": false
     }
   ],
   "airplanes": [
@@ -133,14 +161,7 @@
       "price": 390000
     }
   ],
-  "my_airplanes": [
-    {
-      "id": 0,
-      "name": "Boeing 737-800",
-      "capacity": 150,
-      "price": 250000
-    }
-  ],
+  "my_airplanes": [],
   "airports": [
     {
       "id": 0,

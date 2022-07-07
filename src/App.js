@@ -10,6 +10,8 @@ import PilotDetail from "./Pages/PilotDetail";
 import MyAirplanes from "./Pages/MyAirplanes";
 import AccountBalancePage from './Pages/AccountBalancePage';
 import MyAirportsPage from "./Pages/MyAirportsPage";
+import PilotsOffer from "./Pages/PilotsOffer";
+import PilotsOfferDetail from "./Pages/PilotsOfferDetail";
 
 function App() {
   const [user, setUser] = useState({});
@@ -31,6 +33,8 @@ function App() {
             <Route path="/myairplanes" element={<MyAirplanes />} />
             <Route path="/accountbalance" element={<AccountBalancePage />} />
             <Route path="/myairports" element={<MyAirportsPage />} />
+            <Route path="/pilotsoffer" element={<PilotsOffer />} />
+            <Route path="/pilotsoffer/:id" element={<PilotsOfferDetail />} />
           </Routes>
         </LoginContext.Provider>
       </div>
