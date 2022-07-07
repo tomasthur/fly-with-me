@@ -11,7 +11,7 @@ const PilotsOfferList = () => {
       {data
         .filter((data) => (data.owner === false))
         .map((select) => (
-          <div className="card-pilot">
+          <div className="card-pilot" key={select.id}>
             <div className="row">
                 <h3>{select.firstname}</h3>
                 <h3>{select.lastname}</h3>

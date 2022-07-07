@@ -12,6 +12,7 @@ import AccountBalancePage from './Pages/AccountBalancePage';
 import MyAirportsPage from "./Pages/MyAirportsPage";
 import PilotsOffer from "./Pages/PilotsOffer";
 import PilotsOfferDetail from "./Pages/PilotsOfferDetail";
+import AirplanesOffer from "./Pages/AirplanesOffer";
 
 function App() {
   const [user, setUser] = useState({});
@@ -35,6 +36,7 @@ function App() {
             <Route path="/myairports" element={<MyAirportsPage />} />
             <Route path="/pilotsoffer" element={<PilotsOffer />} />
             <Route path="/pilotsoffer/:id" element={<PilotsOfferDetail />} />
+            <Route path="/airplanesoffer" element={<AirplanesOffer />} />
           </Routes>
         </LoginContext.Provider>
       </div>

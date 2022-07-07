@@ -17,7 +17,7 @@ const MainPageMarket = () => {
                 <img src={PilotsOffer} alt="" />
                 <h6>Pilots Offer</h6>
             </div>
-            <div className="card">
+            <div className="card" onClick={() => navigate('/airplanesoffer')}>
                 <img src={AirplanesOffer} alt="" />
                 <h6>Airplanes Offer</h6>
             </div>
