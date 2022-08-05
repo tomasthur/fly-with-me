@@ -170,3 +170,12 @@
   z-index: 2;
   border-radius: 10px 10px 0px 0px;
 }
+
+@mixin column {
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

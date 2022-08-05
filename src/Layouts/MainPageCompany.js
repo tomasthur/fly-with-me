@@ -34,7 +34,7 @@ const MainPageCompany = () => {
                 <img src={Airports} alt="" />
                 <h6>My Airports</h6>
             </div>
-            <div className="card">
+            <div className="card" onClick={() => navigate('/flightplanner')}>
                 <img src={Schedule} alt="" />
                 <h6>Flight Planner</h6>
             </div>

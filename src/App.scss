@@ -156,3 +156,66 @@ button {
   height: 80%;
   opacity: 0.4;
 }
+
+//Flight Planner
+#cockpit {
+  width: 100%;
+  opacity: 0.8;
+  position: absolute;
+}
+
+.column {
+  @include column;
+}
+
+#container-margin {
+  margin-top: 3vh;
+}
+
+#first-class, #second-class {
+  font-size: 4vw;
+  margin-bottom: 1vh;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $font-color;
+}
+
+#green {
+  color: $button-backround-color;
+}
+
+#red {
+  color: red;
+}
+
+#airplane {
+  width: 8vw;
+  position: relative;
+  animation-name: flying;
+  animation-duration: 13s;
+  animation-iteration-count: 1;
+  z-index: 1;
+}
+
+@keyframes flying {
+  0%   {left:-40%; top:5vh;}
+  100% {left: 30%; top: 60vh;}
+}
+
+#airport-departure {
+  position: relative;
+  left: -15%;
+  top: 1vh;
+  color: red;
+}
+
+#airport-arrival {
+  position: relative;
+  right: -15%;
+  top: 40vh;  
+  color: green;
+}
+
+
+

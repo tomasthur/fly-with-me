@@ -5,11 +5,11 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
 const AccountBalanceList = () => {
-  const { user, money, setMoney, costs, setCosts } = useContext(LoginContext);
+  const { user, money, earnings, costs } = useContext(LoginContext);
   const navigate = useNavigate();
 
   const data = [
-    { name: "Group A", value: money, fill: "#2FC8A3" },
+    { name: "Group A", value: earnings, fill: "#2FC8A3" },
     { name: "Group B", value: costs, fill: "red" },
   ];
 
@@ -30,10 +30,10 @@ const AccountBalanceList = () => {
           <Pie dataKey="value" data={data} cx="50%" cy="50%" outerRadius={80} />
         </PieChart>
         <div className="row">
-          <h5>Your money: {money} eur</h5>
+          <h5>You earn: {earnings} euro</h5>
         </div>
         <div className="row">
-          <h5>Your costs: {costs} eur</h5>
+          <h5>Your costs: {costs} euro</h5>
         </div>
         <button onClick={() => navigate("/main")}>Main Page</button>
       </div>

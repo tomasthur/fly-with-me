@@ -2,29 +2,31 @@
   "pilots": [
     {
       "id": 0,
+      "firstname": "Ivan",
+      "lastname": "Dzubansky",
+      "nationality": "Slovakia",
+      "age": 29,
+      "position": "Captain",
+      "isActive": false,
+      "isSelected": false,
+      "price": 80000,
+      "salary": 800,
+      "practice": 6,
+      "airplane": "Boeing 737-800",
+      "owner": true
+    },
+    {
+      "id": 1,
       "firstname": "Tomas",
       "lastname": "Thur",
       "nationality": "Slovakia",
       "age": 31,
       "position": "Co-Pilot",
       "isActive": false,
-      "price": 50000,
-      "salary": 500,
-      "practice": 4,
-      "airplane": "Boeing 737-800",
-      "owner": true
-    },
-    {
-      "id": 1,
-      "firstname": "Ivan",
-      "lastname": "Dzubansky",
-      "nationality": "Slovakia",
-      "age": 30,
-      "position": "Captain",
-      "isActive": false,
-      "price": 70000,
-      "salary": 700,
-      "practice": 6,
+      "isSelected": false,
+      "price": 60000,
+      "salary": 600,
+      "practice": 5,
       "airplane": "Boeing 737-800",
       "owner": true
     },
@@ -36,6 +38,7 @@
       "age": 29,
       "position": "Captain",
       "isActive": false,
+      "isSelected": false,
       "price": 80000,
       "salary": 800,
       "practice": 7,
@@ -50,6 +53,7 @@
       "age": 27,
       "position": "Captain",
       "isActive": false,
+      "isSelected": false,
       "price": 60000,
       "salary": 600,
       "practice": 5,
@@ -64,6 +68,7 @@
       "age": 30,
       "position": "Captain",
       "isActive": false,
+      "isSelected": false,
       "price": 70000,
       "salary": 700,
       "practice": 7,
@@ -78,6 +83,7 @@
       "age": 24,
       "position": "Co-Pilot",
       "isActive": false,
+      "isSelected": false,
       "price": 30000,
       "salary": 300,
       "practice": 2,
@@ -92,6 +98,7 @@
       "age": 28,
       "position": "Co-Pilot",
       "isActive": false,
+      "isSelected": false,
       "price": 40000,
       "salary": 400,
       "practice": 4,
@@ -106,6 +113,7 @@
       "age": 77,
       "position": "Captain",
       "isActive": false,
+      "isSelected": false,
       "price": 100000,
       "salary": 1000,
       "practice": 50,
@@ -120,6 +128,7 @@
       "age": 50,
       "position": "Captain",
       "isActive": false,
+      "isSelected": false,
       "price": 85000,
       "salary": 850,
       "practice": 30,
@@ -134,6 +143,7 @@
       "age": 24,
       "position": "Co-Pilot",
       "isActive": false,
+      "isSelected": false,
       "price": 3000,
       "salary": 300,
       "practice": 3,
@@ -176,15 +186,21 @@
       "capacity": "150",
       "rent": 3000,
       "owner": true,
-      "price": 30000
+      "price": 30000,
+      "isSelected": false,
+      "departure": false,
+      "arrival": false
     },
     {
       "id": 1,
       "name": "Bratislava",
       "capacity": 300,
       "rent": 6000,
-      "owner": false,
-      "price": 50000
+      "owner": true,
+      "price": 50000,
+      "isSelected": false,
+      "departure": false,
+      "arrival": false
     },
     {
       "id": 2,
@@ -192,7 +208,10 @@
       "capacity": 300,
       "rent": 4000,
       "owner": false,
-      "price": 50000
+      "price": 50000,
+      "isSelected": false,
+      "departure": false,
+      "arrival": false
     },
     {
       "id": 3,
@@ -200,7 +219,10 @@
       "capacity": 300,
       "rent": 5000,
       "owner": false,
-      "price": 50000
+      "price": 50000,
+      "isSelected": false,
+      "departure": false,
+      "arrival": false
     },
     {
       "id": 4,
@@ -208,7 +230,10 @@
       "capacity": 300,
       "rent": 4000,
       "owner": false,
-      "price": 40000
+      "price": 40000,
+      "isSelected": false,
+      "departure": false,
+      "arrival": false
     },
     {
       "id": 5,
@@ -216,7 +241,10 @@
       "capacity": 300,
       "rent": 4000,
       "owner": false,
-      "price": 50000
+      "price": 50000,
+      "isSelected": false,
+      "departure": false,
+      "arrival": false
     }
   ]
 }
